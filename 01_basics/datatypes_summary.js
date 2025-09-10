@@ -39,6 +39,32 @@ const myFunction = function(){
     console.log("Hello World!");
     
 }
+console.log(typeof anotherId);
 
 
 //null ka data types = object
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(use in Primitive) isme copy deta h change krenge toh copy me change hoga , Heap(use in Non Primitive) ye refrenece deta h
+//Stack
+let myYoutubename = "Ishan Singh"
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+//Heap
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ybl",
+}
+
+let userTwo = userOne
+userTwo.email = "ishan@google.com"
+console.log(userTwo.email);
+console.log(userOne.email);
+
